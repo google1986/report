@@ -88,7 +88,7 @@ Page({
         })
       } else {
         wx.request({
-          url: 'http://10.0.4.88:8001/greek/user/update',
+          url: 'http://192.168.8.100:8001/greek/user/update',
           method: "POST",
           header: {
             "Content-Type": "application/x-www-form-urlencoded"

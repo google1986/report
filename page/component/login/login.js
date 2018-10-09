@@ -22,7 +22,7 @@ Page({
     const value = e.detail.value;
     if (value.name && value.password) {      
       wx.request({
-        url: 'http://10.0.4.88:8001/greek/user/login',
+        url: 'http://192.168.8.100:8001/greek/user/login',
         method: "POST",
         header: {
           "Content-Type": "application/x-www-form-urlencoded"
