@@ -10,6 +10,7 @@
         <label class="loginLab">部门:</label>{{personInfo.trueName}}</view>
     </view>
   </view>
+  
   <view class="orders-box">
     <view class="orders">修改密码</view>
     <view class="form-box">
