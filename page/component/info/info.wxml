@@ -1,0 +1,23 @@
+<view class="main">
+  <view class="address-box">
+    <view class="orders">个人信息</view>
+    <view wx:if="{{hasLogin}}" class="address-list">
+      <view>
+        <label class="loginLab">账号:</label>{{personInfo.userName}}</view>
+      <view>
+        <label class="loginLab">姓名:</label>{{personInfo.orgName}}</view>
+      <view>
+        <label class="loginLab">部门:</label>{{personInfo.trueName}}</view>
+    </view>
+  </view>
+  <view class="orders-box">
+    <view class="orders">修改密码</view>
+    <view class="form-box">
+      <form bindsubmit="modifyUserInfo">
+        <input name="firstPassword" password="true" placeholder="请输入新密码" />
+        <input name="secondPassword" password="true" placeholder="再次输入新密码" />
+        <button type="primary" form-type="submit">立即修改</button>
+      </form>
+    </view>
+  </view>
+</view>

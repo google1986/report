@@ -1,0 +1,51 @@
+@import '../../common/common.wxss';
+
+.address-box{
+    border-bottom: 20rpx solid #ededed;
+    color: #999;
+    line-height: 90rpx;
+    font-size: 28rpx;
+}
+.address-box .address-list{
+    padding-left: 30rpx;
+}
+.address-box .address-list view{
+    height: 90rpx;
+    border-bottom: 1rpx solid #e9e9e9;
+}
+.address-box .address-list view:last-child{
+    border-bottom: 0;
+}
+
+.orders-box{
+    color: #999;
+    font-size: 28rpx;
+}
+.orders{
+    height: 90rpx;
+    line-height: 90rpx;
+    border-bottom: 1rpx solid #e9e9e9;
+    text-align: center;
+    font-weight: bold;
+}
+.loginLab {
+     margin: 15px 15px 15px 10px;
+     color:  black;
+     font-size: 14px;
+     font-weight: bold;
+     text-align: left;
+}
+.form-box{
+    padding-left: 30rpx;
+}
+.form-box input{
+    height: 90rpx;
+    border-bottom: 1rpx solid #ededed;
+    color: #999;
+}
+.form-box .input-placeholder{
+    color: #aaa;
+}
+.form-box button{
+    margin:30rpx 30rpx 0 0;
+}

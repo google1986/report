@@ -1,0 +1,6 @@
+@import '../login/login.wxss';
+.register-info {
+  color: red;
+  font-weight: bold;
+  font-size:  x-large;
+}
