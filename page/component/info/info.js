@@ -1,4 +1,7 @@
 // page/component/info/info.js
+// 获取服务器接口地址
+const api = require('../../../config/config.js');
+// 获取app应用实例
 const app = getApp()
 
 Page({
@@ -88,7 +91,7 @@ Page({
         })
       } else {
         wx.request({
-          url: 'http://192.168.8.100:8001/greek/user/update',
+          url: api.updateUsersUrl,
           method: "POST",
           header: {
             "Content-Type": "application/x-www-form-urlencoded"
