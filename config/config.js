@@ -1,5 +1,5 @@
 // 服务器域名
-const baseUrl = 'http://127.0.0.1:8001/';
+const baseUrl = 'http://10.0.4.88:8001/';
 // 更新用户信息
 const updateUsersUrl = baseUrl + 'greek/user/update';
 // 获取项目信息
