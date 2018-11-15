@@ -1,7 +1,7 @@
 <view class="main">
-  <view class="address-box">
-    <view class="orders">个人信息</view>
-    <view wx:if="{{hasLogin}}" class="address-list">
+  <view class="info-box">
+    <view class="person">个人信息</view>
+    <view wx:if="{{hasLogin}}" class="info-list">
       <view>
         <label class="loginLab">账号:</label>{{personInfo.userName}}</view>
       <view>
@@ -11,8 +11,8 @@
     </view>
   </view>
   
-  <view class="orders-box">
-    <view class="orders">修改密码</view>
+  <view class="person-box">
+    <view class="person">修改密码</view>
     <view class="form-box">
       <form bindsubmit="modifyUserInfo">
         <input name="firstPassword" password="true" placeholder="请输入新密码" />
