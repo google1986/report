@@ -8,6 +8,7 @@
       <navigator url="/page/component/info/info">我的信息</navigator>
     </view>
     <view class="login-manage">
+    
     <text bindtap='loginOut'>退出登录</text>
     </view>
   </view>
