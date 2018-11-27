@@ -2,6 +2,8 @@
 const baseUrl = 'http://127.0.0.1:8001/';
 // 更新用户信息
 const updateUsersUrl = baseUrl + 'greek/user/update';
+//注册用户信息
+const registerUrl = baseUrl + 'greek/user/register';
 // 获取项目信息
 const getProjectUrl = baseUrl + 'greek/project/list';
 // 登录接口
@@ -10,8 +12,9 @@ const loginUrl = baseUrl + 'greek/user/login';
 const getOrgUrl = baseUrl + "greek/org/list";
 
 module.exports = {
-  updateUsersUrl: updateUsersUrl,
-  getProjectUrl: getProjectUrl,
-  loginUrl: loginUrl,
-  getOrgUrl: getOrgUrl
+     updateUsersUrl: updateUsersUrl,
+     getProjectUrl: getProjectUrl,
+     loginUrl: loginUrl,
+     getOrgUrl: getOrgUrl,
+     registerUrl: registerUrl
 };

@@ -1,3 +1,8 @@
+// 获取服务器接口地址
+const api = require('../../../config/config.js');
+import WxValidate from '../../../utils/WxValidate.js'
+// 获取app应用实例
+const app = getApp()
 Page({
      data: {
           showTopTips: false,

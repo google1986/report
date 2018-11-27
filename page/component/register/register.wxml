@@ -11,7 +11,7 @@
           <view class="weui-label">登录名称：</view>
         </view>
         <view class="weui-cell__bd">
-          <input name="name" class="weui-input" placeholder="请输入用户名称" />
+          <input name="userName" value='{{userName}}' bindinput='bindUserNameInput' class="weui-input" placeholder="请输入用户名称" />
         </view>
       </view>
 
@@ -20,10 +20,18 @@
           <view class="weui-label">真实姓名：</view>
         </view>
         <view class="weui-cell__bd">
-          <input name="name3" class="weui-input" placeholder="请输入真实姓名" />
+          <input name="trueName" value='{{trueName}}' bindinput='bindTrueNameInput' class="weui-input" placeholder="请输入真实姓名" />
         </view>
       </view>
 
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">登录密码：</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input name="password" value='{{password}}' password='true' bindinput='bindPasswordInput' class="weui-input" placeholder="请输入密码" />
+        </view>
+      </view>
 
       <view class="weui-cell weui-cell_input weui-cell_vcode">
         <view class="weui-cell__hd">
@@ -31,8 +39,8 @@
         </view>
         <view class="weui-cell__bd">
           <picker mode="selector" bindchange="bindPickerChange" value="{{departments[departmentIndex].orgId}}" range="{{departments}}" range-key="{{'orgName'}}">
-            <view class="weui-input">{{departments[departmentIndex].orgName}}</view>
-          </picker>
+            <view class="weui-input">{{departments[departmentIndex].orgName}}</view>           
+          </picker>          
         </view>
       </view>
 
@@ -45,15 +53,14 @@
             <view class="weui-input">{{date}}</view>
           </picker>
         </view>
-      </view>
+      </view>      
     </view>
-
 
     <view class="weui-cells__title">备注信息</view>
     <view class="weui-cells weui-cells_after-title">
       <view class="weui-cell">
         <view class="weui-cell__bd">
-          <textarea class="weui-textarea" name="testsdsd" placeholder="请输入备注内容" maxlength="{{max}}" bindinput="inputText" style="height: 3.3em" />
+          <textarea class="weui-textarea"  placeholder="请输入备注内容" maxlength="{{max}}" bindinput="inputText" style="height: 3.3em" />
           <view class="weui-textarea-counter">{{currentWordNumber|0}}/{{max}}</view>
         </view>
       </view>
