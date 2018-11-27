@@ -1,6 +1,6 @@
 {
      "pages": [
-          "page/component/dayreport/dayreport",
+          
           "page/component/login/login",
           "page/component/index/index",
           "page/component/user/user",
@@ -9,7 +9,7 @@
           "page/component/register/register",
           "page/component/search/search",
           "page/component/annualreport/annualreport",
-          
+          "page/component/dayreport/dayreport",
           "page/component/researchreport/researchreport",
           "page/component/weekreport/weekreport"
      ],

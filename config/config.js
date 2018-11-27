@@ -6,9 +6,12 @@ const updateUsersUrl = baseUrl + 'greek/user/update';
 const getProjectUrl = baseUrl + 'greek/project/list';
 // 登录接口
 const loginUrl = baseUrl + 'greek/user/login';
+//获取所有可用的机构信息
+const getOrgUrl = baseUrl + "greek/org/list";
 
 module.exports = {
-     updateUsersUrl: updateUsersUrl,
-     getProjectUrl: getProjectUrl,
-     loginUrl: loginUrl
+  updateUsersUrl: updateUsersUrl,
+  getProjectUrl: getProjectUrl,
+  loginUrl: loginUrl,
+  getOrgUrl: getOrgUrl
 };

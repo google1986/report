@@ -1,15 +1,69 @@
-<view class="main">
-  <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
-    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
-      <swiper-item>
-        <image src="{{item}}" class="slide-image" width="100%" />
-      </swiper-item>
-    </block>
-  </swiper>
-
-  <view class="form-box">
-    <form bindsubmit="registerSubmit">
-      <text class="register-info">该功能正在开发中.....</text>
-    </form>
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">注册中心</view>
+    <view class="page__desc">注册中心，游客可以按照注册页面提示填写信息、完成全部注册程序后，即可体验相关的功能。</view>
   </view>
+<form bindsubmit="formSubmitUser">
+  <view class="page__bd">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">登录名称：</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input name="name" class="weui-input" placeholder="请输入用户名称" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">真实姓名：</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input name="name3" class="weui-input" placeholder="请输入真实姓名" />
+        </view>
+      </view>
+
+
+      <view class="weui-cell weui-cell_input weui-cell_vcode">
+        <view class="weui-cell__hd">
+          <view class="weui-label">所属部门：</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker mode="selector" bindchange="bindPickerChange" value="{{departments[departmentIndex].orgId}}" range="{{departments}}" range-key="{{'orgName'}}">
+            <view class="weui-input">{{departments[departmentIndex].orgName}}</view>
+          </picker>
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">注册日期：</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker mode="date" value="{{date}}" start="2013-07-05" end="2020-07-05" bindchange="bindDateChange">
+            <view class="weui-input">{{date}}</view>
+          </picker>
+        </view>
+      </view>
+    </view>
+
+
+    <view class="weui-cells__title">备注信息</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">
+          <textarea class="weui-textarea" name="testsdsd" placeholder="请输入备注内容" maxlength="{{max}}" bindinput="inputText" style="height: 3.3em" />
+          <view class="weui-textarea-counter">{{currentWordNumber|0}}/{{max}}</view>
+        </view>
+      </view>
+    </view>
+
+
+    <view class="weui-btn-area">
+      <button class="weui-btn" type="primary" form-type="submit">确定</button>
+      <button class="weui-btn" type="warn" form-type="reset">重置</button>
+    </view>
+  </view>
+  </form>
 </view>

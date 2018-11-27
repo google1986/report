@@ -1,6 +1,4 @@
-@import '../login/login.wxss';
-.register-info {
-  color: red;
-  font-weight: bold;
-  font-size:  x-large;
+@import "../../common/lib/weui.wxss";
+.page-section{
+  margin-bottom: 20rpx;
 }
