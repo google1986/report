@@ -90,6 +90,7 @@ Page({
           mask: true
         })
       } else {
+           debugger
         wx.request({
           url: api.updateUsersUrl,
           method: "POST",
@@ -97,8 +98,8 @@ Page({
             "Content-Type": "application/x-www-form-urlencoded"
           },
           data: {
-            "userId": app.globalData.userInfo.userId,
-            "password": value.secondPassword
+            userId: app.globalData.userInfo.userId,
+            password: value.secondPassword
           },
           //接收后台回调函数
           success: function(res) {

@@ -1,8 +1,5 @@
 {
      "pages": [
-
-       
-          
           "page/component/login/login",
           "page/component/index/index",
           "page/component/user/user",
@@ -13,7 +10,8 @@
           "page/component/annualreport/annualreport",
           "page/component/dayreport/dayreport",
           "page/component/researchreport/researchreport",
-          "page/component/weekreport/weekreport"
+          "page/component/weekreport/weekreport",
+          "page/component/logout/logout"
      ],
      "window": {
           "navigationBarTextStyle": "#ffffff",
