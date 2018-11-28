@@ -30,6 +30,20 @@ const formatDate = date => {
 }
 
 /**
+ * @desc: form参数封装成json
+ * @return: eg: '2018-10-30'
+ * @param {Date对象} date 
+ */
+const json2Form = json=> {
+  var str = [];
+  for (var p in json) {
+    str.push(encodeURIComponent(p) + "=" + encodeURIComponent(json[p]));
+  }
+  return str.join("&");
+}
+
+
+/**
  * @desc: 格式化数字
  * @return: n > 10 [eg: 12] => 12 | n < 10 [eg: 3] => '03'
  * @param {*} n 
@@ -41,5 +55,6 @@ const formatNumber = n => {
 
 module.exports = {
   formatTime: formatTime,
-  formatDate: formatDate
+  formatDate: formatDate,
+  json2Form: json2Form
 }

@@ -174,8 +174,7 @@ Page({
      /**
       * 改变注册日期下拉选项
       */
-     bindDateChange: function(e) {
-          debugger
+     bindDateChange: function(e) {    
           this.setData({
                date: e.detail.value,
                registerDate : e.detail.value

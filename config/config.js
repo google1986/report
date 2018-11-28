@@ -10,11 +10,18 @@ const getProjectUrl = baseUrl + 'greek/project/list';
 const loginUrl = baseUrl + 'greek/user/login';
 //获取所有可用的机构信息
 const getOrgUrl = baseUrl + "greek/org/list";
+//添加工作日志信息
+const addWorkLogUrl = baseUrl + "greek/work/add";
+//获取所有可用的机构信息
+const getProjectIdAndnameUrl = baseUrl + "greek/project/listIdAndName";
+
 
 module.exports = {
-     updateUsersUrl: updateUsersUrl,
-     getProjectUrl: getProjectUrl,
-     loginUrl: loginUrl,
-     getOrgUrl: getOrgUrl,
-     registerUrl: registerUrl
+  updateUsersUrl: updateUsersUrl,
+  getProjectUrl: getProjectUrl,
+  loginUrl: loginUrl,
+  getOrgUrl: getOrgUrl,
+  registerUrl: registerUrl,
+  getProjectIdAndnameUrl: getProjectIdAndnameUrl,
+  addWorkLogUrl: addWorkLogUrl
 };
