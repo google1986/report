@@ -1,5 +1,5 @@
 // 服务器域名
-const baseUrl = 'http://192.168.1.108:8001/';
+const baseUrl = 'http://192.168.8.101:8989/';
 // 更新用户信息
 const updateUsersUrl = baseUrl + 'greek/user/update';
 //注册用户信息

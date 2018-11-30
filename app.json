@@ -3,7 +3,6 @@
           "page/component/login/login",
           "page/component/index/index",
           "page/component/user/user",
-          "page/component/list/list",
           "page/component/info/info",
           "page/component/register/register",
           "page/component/search/search",
@@ -15,7 +14,7 @@
      ],
      "window": {
           "navigationBarTextStyle": "#ffffff",
-          "navigationBarTitleText": "及时报alpha",
+          "navigationBarTitleText": "快报",
           "navigationBarBackgroundColor": "#AB956D",
           "backgroundColor": "#eeeeee",
           "enablePullDownRefresh": true
